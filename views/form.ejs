@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<script src="./javascripts/formscripts.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<div class="messageBoard">
+				<h1>Add a message</h1>
+				<form method="POST" action="/new">
+					<label for="user">Author name</label>
+					<input type="text" name="user" />
+					<label for="text">Message</label>
+					<textarea name="text" cols="30" rows="10"></textarea>
+					<div class="buttons">
+						<button type="button" id="cancel">Cancel</button>
+						<button>Submit</button>
+					</div>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
